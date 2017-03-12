@@ -1,0 +1,303 @@
+/*Normalize*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: 'old_standard_bold';
+  src: url("fonts/Old_Standard_TT/oldstandard-bold-webfont.woff2") format("woff2"), url("fonts/Old_Standard_TT/oldstandard-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'old_standard_italic';
+  src: url("fonts/Old_Standard_TT/oldstandard-italic-webfont.woff2") format("woff2"), url("fonts/Old_Standard_TT/oldstandard-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'old_standard_regular';
+  src: url("fonts/Old_Standard_TT/oldstandard-regular-webfont.woff2") format("woff2"), url("fonts/Old_Standard_TT/oldstandard-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*General*/
+body {
+  font-family: 'old_standard_regular', serif;
+  background-color: #152744;
+  color: white;
+  margin: 0px;
+  border: 0.15em solid #e8d43c;
+  font-size: 15px;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease-out;
+}
+
+@media (min-width: 32em) {
+  body {
+    font-size: 17px;
+  }
+}
+@media (min-width: 45em) {
+  body {
+    border: 0.22em solid #e8d43c;
+  }
+}
+@media (min-width: 60em) {
+  body {
+    border: 0.25em solid #e8d43c;
+  }
+}
+a {
+  color: #e8d43c;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: "old_standard_bold", serif;
+  color: #e8d43c;
+}
+
+h2 {
+  font-size: 2em;
+  margin: .6em .3em .6em .3em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: .3em 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin: .3em 0;
+}
+
+/*Nav*/
+nav ul {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+
+nav ul li {
+  padding: .5em;
+}
+
+nav ul li.lady {
+  padding: 0;
+}
+
+.logo {
+  max-width: 10em;
+}
+
+.logo2 {
+  max-width: 4em;
+}
+
+@media (max-width: 460px) {
+  .logo {
+    max-width: 7em;
+  }
+}
+@media (max-width: 375px) {
+  .logo2 {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .jimmy-logo {
+    order: -1;
+  }
+}
+@media (min-width: 60em) {
+  .logo {
+    max-width: 15em;
+  }
+
+  .logo2 {
+    max-width: 6em;
+  }
+}
+/*Header*/
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+img.hero2 {
+  display: none;
+}
+
+@media (min-width: 60em) {
+  header {
+    justify-content: space-around;
+  }
+
+  img.hero2 {
+    display: flex;
+  }
+}
+/*Connect*/
+#connect ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#connect ul li {
+  margin: 0 .7em;
+}
+
+/*Upcoming Shows*/
+article {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+article:last-of-type {
+  margin-bottom: 3rem;
+}
+
+.upcoming-shows li {
+  background-color: rgba(232, 212, 60, 0.25);
+  padding: .5rem;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (min-width: 58.44rem) {
+  .shows-photo {
+    background-image: url("../img/jimmy-crackcorn-singing.jpg");
+    background-position: center;
+    width: 500px;
+    height: 334px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.upcoming-shows li h4, .upcoming-shows li p {
+  margin: 0 .7em;
+}
+
+/*Music*/
+.track {
+  max-width: 400px;
+  height: 400px;
+  background-image: url("../img/jimmypacificcentral.jpg");
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (min-width: 28.2em) {
+  .track {
+    margin-left: 1em;
+  }
+}
+.info {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0));
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.info h3 {
+  padding-left: 1rem;
+}
+
+@media (min-width: 32em) {
+  .info h3 {
+    font-size: 1.3rem;
+  }
+}
+audio {
+  width: 100%;
+}
+
+/*Footer*/
+footer {
+  background-color: black;
+}
+
+footer img {
+  max-width: 10em;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 60em) {
+  footer img {
+    max-width: 15em;
+  }
+}
