@@ -1,5 +1,6 @@
 import React from 'react'
 
+import '../css/Shows.css'
 
 class Shows extends React.Component {
   render(){

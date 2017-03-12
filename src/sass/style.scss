@@ -1,0 +1,33 @@
+@import "normalize";
+@import "colors";
+@import "fonts";
+
+
+// Layout
+
+body {
+  background-color: #152744;
+  margin: 0px;
+  border: 0.15em solid $yellowBelly;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease-out;
+}
+
+@media (min-width: 32em) {
+  body {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 45em) {
+  body {
+    border: 0.22em solid $yellowBelly;
+  }
+}
+
+@media (min-width: 60em) {
+  body {
+    border: 0.25em solid $yellowBelly;
+  }
+}

@@ -1,0 +1,15 @@
+footer {
+  background-color: black;
+}
+
+footer img {
+  max-width: 10em;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 60em) {
+  footer img {
+    max-width: 15em;
+  }
+}

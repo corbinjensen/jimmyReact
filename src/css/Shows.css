@@ -1,0 +1,29 @@
+article {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+article:last-of-type {
+  margin-bottom: 3rem; }
+
+.upcoming-shows li {
+  background-color: rgba(232, 212, 60, 0.25);
+  padding: .5rem;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around; }
+
+@media (min-width: 58.44rem) {
+  .shows-photo {
+    background-image: url("../img/jimmy-crackcorn-singing.jpg");
+    background-position: center;
+    width: 500px;
+    height: 334px; }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }
+
+.upcoming-shows li h4, .upcoming-shows li p {
+  margin: 0 .7em; }

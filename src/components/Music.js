@@ -1,6 +1,7 @@
 import React from 'react'
 import cuddle from '../music/Cuddle-Jimmy_Crackcorn_Jasmin.mp3'
 
+import '../css/Music.css'
 
 class Music extends React.Component {
   render(){

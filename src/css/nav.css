@@ -1,0 +1,38 @@
+nav ul {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse; }
+
+nav ul li {
+  padding: .5em; }
+
+nav ul li.lady {
+  padding: 0; }
+
+.logo {
+  max-width: 10em; }
+
+.logo2 {
+  max-width: 4em; }
+
+@media (max-width: 460px) {
+  .logo {
+    max-width: 7em; } }
+
+@media (max-width: 375px) {
+  .logo2 {
+    display: none; } }
+
+@media (min-width: 960px) {
+  .jimmy-logo {
+    order: -1; } }
+
+@media (min-width: 60em) {
+  .logo {
+    max-width: 15em; }
+  .logo2 {
+    max-width: 6em; } }

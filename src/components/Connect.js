@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../css/Connect.css'
+
 class Connect extends React.Component {
   render(){
     return (

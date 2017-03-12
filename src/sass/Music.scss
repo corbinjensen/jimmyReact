@@ -1,0 +1,35 @@
+.track {
+  max-width: 400px;
+  height: 400px;
+  background-image: url("../img/jimmypacificcentral.jpg");
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (min-width: 28.2em) {
+  .track {
+    margin-left: 1em;
+  }
+}
+.info {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0));
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.info h3 {
+  padding-left: 1rem;
+}
+
+@media (min-width: 32em) {
+  .info h3 {
+    font-size: 1.3rem;
+  }
+}
+audio {
+  width: 100%;
+}

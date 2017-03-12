@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'old_standard_bold';
+  src: url("../fonts/Old_Standard_TT/oldstandard-bold-webfont.woff2") format("woff2"),
+  url("../fonts/Old_Standard_TT/oldstandard-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'old_standard_italic';
+  src: url("../fonts/Old_Standard_TT/oldstandard-italic-webfont.woff2") format("woff2"),
+  url("../fonts/Old_Standard_TT/oldstandard-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'old_standard_regular';
+  src: url("../fonts/Old_Standard_TT/oldstandard-regular-webfont.woff2") format("woff2"),
+  url("../fonts/Old_Standard_TT/oldstandard-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'old_standard_regular', serif;
+  color: white;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+a {
+  color: $yellowBelly;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: "old_standard_bold", serif;
+  color: $yellowBelly;
+}
+
+h2 {
+  font-size: 2em;
+  margin: .6em .3em .6em .3em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: .3em 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin: .3em 0;
+}

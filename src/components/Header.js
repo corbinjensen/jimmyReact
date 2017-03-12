@@ -3,6 +3,8 @@ import React from 'react'
 import JimmyHero1 from '../img/jimmy-rocking-out.jpg'
 import JimmyHero2 from '../img/jimmyspecs.jpg'
 
+import '../css/Header.css'
+
 class Header extends React.Component {
   render(){
     return (

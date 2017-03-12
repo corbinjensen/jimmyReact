@@ -1,0 +1,14 @@
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; }
+
+img.hero2 {
+  display: none; }
+
+@media (min-width: 60em) {
+  header {
+    justify-content: space-around; }
+  img.hero2 {
+    display: flex; } }
